@@ -1,0 +1,32 @@
+{
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "build/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes":[
+  {
+    "src":"/products",
+    "dest":"/index.js"
+  },
+  {
+    "src":"/auth",
+    "dest":"/index.js"
+  },
+  {
+    "src":"/users",
+    "dest":"/index.js"
+  },
+  {
+    "src":"/orders",
+    "dest":"/index.js"
+  }
+  ],
+
+  "rewrites": [{ "source": "/(.*)", "destination": "index.js" }]
+}
