@@ -1,16 +1,6 @@
 {
   "name": "ecommerce-backend",
   "version": "1.0.0",
-  "builds": [{
-    "src": "./index.js",
-    "use": "@now/node-server"
-  }],
-  "routes": [{"handle": "filesystem"},
-    {
-      "src": "/.*",
-      "dest": "index.js"
-    }
-  ],
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -37,5 +27,3 @@
     "stripe": "^12.4.0"
   }
 }
-
-  
